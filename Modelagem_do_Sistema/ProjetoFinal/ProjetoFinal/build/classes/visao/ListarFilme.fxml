@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="844.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visao.ListarFilmeController">
+   <children>
+      <ToolBar prefHeight="48.0" prefWidth="855.0">
+         <items>
+            <Button fx:id="btnAtualizar" mnemonicParsing="false" prefHeight="32.0" prefWidth="76.0" text="Atualizar" />
+            <Button fx:id="btnCadastrar" mnemonicParsing="false" prefHeight="32.0" prefWidth="76.0" text="Cadastrar" />
+            <Button fx:id="btnExcluir" mnemonicParsing="false" prefHeight="32.0" prefWidth="76.0" text="Excluir" />
+            <Button fx:id="btnVoltar" layoutX="170.0" layoutY="13.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="76.0" text="Voltar" />
+         </items>
+      </ToolBar>
+      <TableView fx:id="tableView" layoutY="48.0" prefHeight="251.0" prefWidth="855.0">
+         <columns>
+            <TableColumn fx:id="codigo" prefWidth="59.0" text="Código" />
+            <TableColumn fx:id="nome" prefWidth="314.0" text="Nome" />
+            <TableColumn fx:id="descricao" prefWidth="253.0" text="Descrição" />
+            <TableColumn fx:id="ano" prefWidth="44.0" text="Ano" />
+            <TableColumn fx:id="duracao" prefWidth="71.0" text="Duração" />
+            <TableColumn fx:id="numOscar" prefWidth="113.0" text="Número de Oscar" />
+         </columns>
+      </TableView>
+      <AnchorPane layoutY="299.0" prefHeight="230.0" prefWidth="844.0">
+         <children>
+            <TextField fx:id="nome1" layoutX="137.0" layoutY="28.0" prefHeight="31.0" prefWidth="215.0" />
+            <Label layoutX="19.0" layoutY="35.0" text="Nome:" />
+            <TextField fx:id="descricao1" layoutX="553.0" layoutY="28.0" prefHeight="31.0" prefWidth="215.0" />
+            <TextField fx:id="ano1" layoutX="137.0" layoutY="92.0" prefHeight="31.0" prefWidth="215.0" />
+            <Label layoutX="422.0" layoutY="35.0" text="Descrição:" />
+            <Label layoutX="25.0" layoutY="99.0" text="Ano:" />
+            <Button fx:id="btnAlterar" layoutX="602.0" layoutY="171.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="118.0" text="ALTERAR" />
+            <Label layoutX="426.0" layoutY="99.0" text="Duração:" />
+            <TextField fx:id="duracao1" layoutX="553.0" layoutY="92.0" prefHeight="31.0" prefWidth="215.0" />
+            <Label layoutX="7.0" layoutY="181.0" text="Número de Oscar:" />
+            <TextField fx:id="numOscar1" layoutX="137.0" layoutY="166.0" prefHeight="31.0" prefWidth="215.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
